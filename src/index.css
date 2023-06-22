@@ -1,13 +1,94 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_container {
+  width: 100vw;
+  display: flex;
+}
+.nav {
+  padding-right: 2.5vw;
+  width: 20vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(210, 221, 230);
+}
+.nav button {
+  all: unset;
+  width: 100%;
+  padding: 10px 0px 10px 5vw;
+  border-radius: 0pc 10px 10px 0px;
+}
+.nav button span {
+  margin-left: 50px;
+}
+.nav button:hover {
+  cursor: pointer;
+  background-color: rgb(63, 205, 231);
+}
+.preview {
+  width: 20vw;
+  border-right: 1px solid rgb(205, 200, 200);
+}
+.preview div {
+  padding: 10px 0px 0px 10px;
+}
+.preview div:hover {
+  background-color: rgb(170, 203, 233);
+  cursor: pointer;
+}
+.preview div h3 {
+  color: rgb(70, 186, 244);
+}
+.content {
+  width: 60vw;
+  padding: 15px;
+}
+.content p {
+  padding-top: 10px;
+}
+.nabvar {
+  padding: 5px;
+  background-color: rgb(88, 199, 239);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+}
+.nabvar input {
+  width: 20vw;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.nabvar .new i {
+  color: rgb(15, 146, 227);
+}
+.nabvar .read_email i {
+  color: rgb(30, 121, 239);
+}
+.nabvar div {
+  cursor: pointer;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.header_container h2{
+    color: white;
+    margin-left: 10px;
+}
+.header_container i{
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
 }
